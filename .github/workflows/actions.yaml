@@ -34,7 +34,7 @@ jobs:
 
       - name: Clone Helm repo
         run: |
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Sreevas-MK/k8s-helm-nodeapp.git helm-temp
+          git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/Sreevas-MK/k8s-helm-nodeapp.git helm-temp
         shell: bash
 
       - name: Update Helm values.yaml
